@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="draw">
+        <div class="draw01" *ngIf='drawstep>0'></div>
+        <div class="draw02" *ngIf='drawstep>1'></div>
+        <div class="draw03" *ngIf='drawstep>2'></div>
+        <div class="draw04" *ngIf='drawstep>3'></div>
+        <div class="draw05" *ngIf='drawstep>4'></div>
+        <div class="draw06" *ngIf='drawstep>5'></div>
+        <div class="draw07" *ngIf='drawstep>6'></div>
+        <div class="draw08" *ngIf='drawstep>7'></div>
+    </div>
+    <div class="keypad" *ngIf='actword'>
+        <div *ngFor='let letter of actletters' [ngStyle]="{'color':foundletters.indexOf(letter) < 0 ? '#488' : '#CEE' }" class="blankkey">
+            {{letter}}
+        </div>
+        <div class="clear"></div>
+
+        <div *ngFor='let letter of letters' class="key" [ngStyle]="{'visibility':usedletters.indexOf(letter) < 0 ? 'visible' : 'hidden' }" (click)="guess(letter)">
+            {{letter}}
+        </div>
+        <div class="clear"></div>
+        <div class="scorekey">
+            {{successes}}
+        </div>  
+        <div class="scorekey">
+            {{letterlength}}
+        </div>        
+    </div>
+</div>
+<div class="clear"></div>
+<div style="padding: 15px;">
+    <input (click)="getword()" type="button" class="btn-primary" value="Start new game" />
+    <input (click)="surrender()" type="button" class="btn-primary" value="End game" />
+</div>
+
+<div class="tacepao" *ngIf='message'>
+    {{message}}
+</div>
+
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>

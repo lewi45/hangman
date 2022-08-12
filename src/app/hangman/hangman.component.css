@@ -1,0 +1,141 @@
+.draw {
+    width: 400px;
+    height: 400px;
+    background-color: #CEE;
+    position: relative;
+    float: left;
+    margin: 20px;
+
+}
+
+.tacepao {
+    position: absolute;
+    top: 100px;
+    left: 28px;
+    width: 320px;
+    height: 320px;
+    padding: 40px;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+    z-index: 1000;
+}
+
+.draw01, .draw02, .draw03, .draw04, .draw05, .draw06, .draw07, .draw08 {
+    position: absolute;
+    background-color: black;    
+}
+
+.draw01 {
+    top: 20px;
+    left: 60px;
+    width: 300px;
+    height: 10px;
+}
+
+.draw02 {
+    top: 20px;
+    left: 360px;
+    width: 10px;
+    height: 340px;
+}
+
+.draw03 {
+    top: 40px;
+    left: 190px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.draw04 {
+    top: 90px;
+    left: 170px;
+    width: 80px;
+    height: 100px;
+}
+
+.draw05 {
+    top: 124px;
+    left: 100px;
+    width: 80px;
+    height: 10px;
+    transform: rotate(-45deg);
+}
+
+.draw06 {
+    top: 124px;
+    left: 240px;
+    width: 80px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.draw07 {
+    top: 238px;
+    left: 130px;
+    width: 100px;
+    height: 10px;
+    transform: rotate(-85deg);
+}
+
+.draw08 {
+    top: 238px;
+    left: 190px;
+    width: 100px;
+    height: 10px;
+    transform: rotate(85deg);
+}
+
+.clear {
+    clear: both;
+}
+
+.keypad {
+    float: left;
+    margin: 20px;
+    width: 400px;
+}
+
+.key {
+    float: left;
+    font-size: 20px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin: 4px;
+    text-align: center;
+    width: 32px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.blankkey, .scorekey {
+    float: left;
+    font-size: 20px;
+    border: 1px solid #488;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    width: 32px;
+    cursor: pointer;  
+    color: rgb(15, 33, 33);
+    background-color: #488;  
+}
+
+.scorekey {
+    color:#CEE;
+}
+
+.btn-primary {
+    padding: 6px 16px;
+    border-radius: 4px;
+    border: 1px solid #488;
+    margin: 0 5px;
+    background-color: #CEE;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #FFF;
+}
